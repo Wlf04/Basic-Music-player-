@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Reproductor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="disc.svg">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="music-player">
+    <nav>
+   <div class="circle">
+    <i class="fa-solid fa-angle-left"></i>
+   </div>
+   <div class="circle">
+    <i class="fa-solid fa-bars"></i>
+   </div>
+    </nav>
+
+<img src="foto.jpg" class="song-img">  
+<h1>SONG NAME</h1>
+<P>Unkwown Artist</P>  
+
+<audio  id="song">
+    <source src="/Music Reproductor/Al2 un eclipse.mp3"  type="audio/mpeg">
+</audio>
+  
+  <input type="range" value="0" id="progress">
+
+   <div class="controls">
+    <div><i class="fa-solid fa-backward"></i></div>
+    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrIcon"></i></div>
+    <div><i class="fa-solid fa-forward"></i></div>
+   </div> 
+
+    </div>
+
+</div>
+
+
+
+   <script src="script.js"></script> 
+   <script src="https://kit.fontawesome.com/db173a3adc.js" crossorigin="anonymous"></script>
+</body>
+</html>
